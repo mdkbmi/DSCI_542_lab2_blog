@@ -7,10 +7,10 @@ website:
   navbar:
     right:
       - about.qmd
+      - icon: linkedin
+        href: https://linkedin.com/danishkarlin
       - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/mdkbmi
 format:
   html:
     theme: cosmo
