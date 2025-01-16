@@ -6,7 +6,7 @@ about:
   links:
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com/danishkarlin
+      href: https://linkedin.com/in/danishkarlinisa
     - icon: github
       text: Github
       href: https://github.com/mdkbmi

@@ -8,7 +8,7 @@ website:
     right:
       - about.qmd
       - icon: linkedin
-        href: https://linkedin.com/danishkarlin
+        href: https://linkedin.com/in/danishkarlinisa
       - icon: github
         href: https://github.com/mdkbmi
 format:
