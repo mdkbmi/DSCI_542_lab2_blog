@@ -1,1 +1,1 @@
-# DSCI_524_lab2_blog
+# DSCI_542_lab2_blog
