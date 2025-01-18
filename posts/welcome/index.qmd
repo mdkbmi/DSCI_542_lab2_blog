@@ -89,5 +89,6 @@ While this is nothing for us to sneeze at, we intend to continue working on
 improving the model to make better recommendations to you 
 by including even more information about the car, and possibly,
 taking into account users' reviews.
+
 While we continue working to make this model better, we hope that you can take our car 
 recommendation model for a spin and let us know how we can make it better for you!
