@@ -32,4 +32,62 @@ analysing traits of desirable and undesirable cars from past data,
 helping us shortlist cars that meet our specific requirements.
 This results in a smaller pool of cars for us to consider,
 which saves us time spent on visiting dealerships and test drives,
-and reduces the effort needed to sift through numerous car reviews.
+and reduces the effort needed to sift through numerous car reviews,
+which brings us to our project &mdash; 
+using machine learning to predict the quality of cars.
+
+# Our project
+
+Inspired by this idea, we built a machine learning model that 
+can predict the quality of any given car based on the features of that car.
+We hope that this tool will aid your decision-making and
+make the car-buying process less stressful.
+
+# The data
+
+In the computer science world, there is a famous saying &mdash; 
+"garbage in, garbage out".
+This means that if the data that the model learns from is not of good quality,
+the model will never be able to predict accurate results.
+This brings us to the first step of this project: the data.
+
+We used data from a large collection of cars, each described 
+by its price, maintenance cost, number of doors, seating capacity, 
+boot size, and safety rating.
+From @fig-targetdist, we found out that unacceptable cars 
+form a disproportionately large part of this dataset.
+This may pose a problem as we build model since there may not be enough data 
+on other types of cars (namely cars that are very good, good, 
+or acceptable) for the model to learn from.
+
+![Distribution of Target Variable](target_distribution_raw.png){#fig-targetdist width="40%"}
+
+# The machine learning algorithm
+
+Just like cars, there are a lot of machine learning models for us to choose from.
+Each model looks for patterns in the data differently,
+and each has its own strengths and weaknesses.
+Fortunately, the search for the best model for our project isn't as hard
+as finding the right car for yourself at the moment, with the help of several
+tools that makes the process a whole lot easier.
+
+We chose the Support Vector Classifier (SVC) for this project.
+What SVC does is finding the boundaries that separate the different qualities of cars,
+just like how a country's borders are drawn.
+These boundaries are drawn based on the cars' characteristics.
+One strength of SVC is that it can handle complex data, especially where overlaps are common.
+This allows it to draw very intricate boundaries (not just straight lines!) 
+to separate the different qualities of cars.
+
+# The results
+
+After doing some final touches on the model, we tested the model again &mdash;
+this time round, with a new set of data.
+I am happy to report that the model's predictions on the quality of a car
+is correct 99.1% of the time.
+While this is nothing for us to sneeze at, we intend to continue working on
+improving the model to make better recommendations to you 
+by including even more information about the car, and possibly,
+taking into account users' reviews.
+While we continue working to make this model better, we hope that you can take our car 
+recommendation model for a spin and let us know how we can make it better for you!

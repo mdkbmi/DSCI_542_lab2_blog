@@ -156,7 +156,35 @@ ul.task-list li input[type="checkbox"] {
 <section id="what-is-machine-learning" class="level1">
 <h1>What is machine learning?</h1>
 <p>Machine learning is all about using computers to spot patterns in large amounts of data, which can then be used to make predictions about similar situations in the future. In fact, many of the applications that we use leverage machine learning to make our lives better, such as Netflix’s recommendations for shows and movies and spam email detection.</p>
-<p>By using machine learning, we can let computers do the heavy lifting for us by analysing traits of desirable and undesirable cars from past data, helping us shortlist cars that meet our specific requirements. This results in a smaller pool of cars for us to consider, which saves us time spent on visiting dealerships and test drives, and reduces the effort needed to sift through numerous car reviews.</p>
+<p>By using machine learning, we can let computers do the heavy lifting for us by analysing traits of desirable and undesirable cars from past data, helping us shortlist cars that meet our specific requirements. This results in a smaller pool of cars for us to consider, which saves us time spent on visiting dealerships and test drives, and reduces the effort needed to sift through numerous car reviews, which brings us to our project — using machine learning to predict the quality of cars.</p>
+</section>
+<section id="our-project" class="level1">
+<h1>Our project</h1>
+<p>Inspired by this idea, we built a machine learning model that can predict the quality of any given car based on the features of that car. We hope that this tool will aid your decision-making and make the car-buying process less stressful.</p>
+</section>
+<section id="the-data" class="level1">
+<h1>The data</h1>
+<p>In the computer science world, there is a famous saying — “garbage in, garbage out”. This means that if the data that the model learns from is not of good quality, the model will never be able to predict accurate results. This brings us to the first step of this project: the data.</p>
+<p>We used data from a large collection of cars, each described by its price, maintenance cost, number of doors, seating capacity, boot size, and safety rating. From <a href="#fig-targetdist" class="quarto-xref">Figure&nbsp;1</a>, we found out that unacceptable cars form a disproportionately large part of this dataset. This may pose a problem as we build model since there may not be enough data on other types of cars (namely cars that are very good, good, or acceptable) for the model to learn from.</p>
+<div id="fig-targetdist" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-targetdist-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="target_distribution_raw.png" class="img-fluid figure-img" style="width:40.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-targetdist-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Distribution of Target Variable
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-machine-learning-algorithm" class="level1">
+<h1>The machine learning algorithm</h1>
+<p>Just like cars, there are a lot of machine learning models for us to choose from. Each model looks for patterns in the data differently, and each has its own strengths and weaknesses. Fortunately, the search for the best model for our project isn’t as hard as finding the right car for yourself at the moment, with the help of several tools that makes the process a whole lot easier.</p>
+<p>We chose the Support Vector Classifier (SVC) for this project. What SVC does is finding the boundaries that separate the different qualities of cars, just like how a country’s borders are drawn. These boundaries are drawn based on the cars’ characteristics. One strength of SVC is that it can handle complex data, especially where overlaps are common. This allows it to draw very intricate boundaries (not just straight lines!) to separate the different qualities of cars.</p>
+</section>
+<section id="the-results" class="level1">
+<h1>The results</h1>
+<p>After doing some final touches on the model, we tested the model again — this time round, with a new set of data. I am happy to report that the model’s predictions on the quality of a car is correct 99.1% of the time. While this is nothing for us to sneeze at, we intend to continue working on improving the model to make better recommendations to you by including even more information about the car, and possibly, taking into account users’ reviews. While we continue working to make this model better, we hope that you can take our car recommendation model for a spin and let us know how we can make it better for you!</p>
 
 
 </section>
